@@ -182,8 +182,8 @@ body {
     color: #645C26;
     min-width: 247px;
     cursor: pointer;
+    transition: box-shadow 0.2s linear;
 }
-
 
 @media(hover: hover) {
     .registration:hover {
