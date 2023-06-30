@@ -344,6 +344,10 @@ body {
 
 @media (max-width: 767px) {
 
+    .content {
+        padding-top: 25px;
+    }
+
     .features__inner {
         padding-left: 16px;
     }
