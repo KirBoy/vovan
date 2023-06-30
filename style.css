@@ -38,6 +38,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #101420;
 }
 
 .header {
@@ -122,6 +123,10 @@ body {
     font-style: normal;
     font-weight: 900;
     max-width: 750px;
+}
+
+.promo__title span {
+    border-bottom: 5px solid #FFDE00;
 }
 
 .list {
@@ -338,6 +343,10 @@ body {
 
     .promo__title {
         font-size: 28px;
+    }
+
+    .promo__title span {
+        border-bottom: 2px solid #FFDE00;
     }
 
     .promo__bottom {
