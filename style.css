@@ -135,8 +135,18 @@ body {
     font-style: normal;
     font-weight: 900;
     max-width: 750px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+
+.promo__title::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000000; /* Цвет тени */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень текста */
+}
 .promo__title span {
     border-bottom: 5px solid #FFDE00;
 }
