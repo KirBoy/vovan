@@ -326,7 +326,6 @@ body {
 
 @media (max-width: 991px) {
     .features__inner {
-        justify-content: flex-start;
         padding-left: 55px;
     }
 
@@ -373,6 +372,11 @@ body {
     .promo__bottom {
         flex-direction: column;
         gap: 35px;
+    }
+
+    .registration {
+        min-width: unset;
+        width: 100%;
     }
 
     .login {
