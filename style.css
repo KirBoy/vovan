@@ -14,13 +14,84 @@
 
     src: local("UniSans"),
     url("assets/fonts/UniSans.woff2") format("woff2");
-url("assets/fonts/UniSans.woff") format("woff");
+    url("assets/fonts/UniSans.woff") format("woff");
 }
 
 body {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     color: #FFF;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(16, 20, 30, 0.90);
+    opacity: 0;
+    z-index: -1;
+    transition: z-index 0.2s linear, opacity 0.2s linear;
+}
+
+
+.modal__content {
+    position: absolute;
+    background-color: #141825;
+    max-width: 710px;
+    width: 100%;
+    padding: 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0.3);
+    border-radius: 10px;
+    transition: opacity 0.2s linear, transform 0.2s linear, bottom 0.2s linear;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.closeButton {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.closeButton:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1.3px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+.closeButton:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1.3px;
+    transform: rotate(135deg);
+    background-color: #fff;
+}
+
+.modal--open {
+    z-index: 3;
+    opacity: 1;
+}
+
+.modal__content--open {
+    bottom: 50%;
+    transform: translate(-50%, 50%) scale(1);
+    z-index: 4;
+}
+
+.modal__text + .modal__text {
+    margin-top: 20px;
 }
 
 .logo {
@@ -326,6 +397,10 @@ body {
     background-color: #141825;
     color: #4A5570;
     font-size: 14px;
+}
+
+.footer__text span {
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {
