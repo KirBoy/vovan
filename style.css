@@ -32,25 +32,29 @@ body {
     background-color: rgba(16, 20, 30, 0.90);
     opacity: 0;
     z-index: -1;
-    transition: z-index 0.2s linear, opacity 0.2s linear;
+    transition: z-index 0.02s linear, opacity 0.2s linear;
 }
 
-
-.modal__content {
+.modal__inner {
     position: absolute;
-    background-color: #141825;
     max-width: 710px;
     width: 100%;
-    padding: 40px;
-    font-size: 14px;
-    line-height: 1.5;
+    padding: 0 40px;
+    background-color: #141825;
     bottom: 10%;
     left: 50%;
+    transition: opacity 0.2s linear, transform 0.2s linear, bottom 0.2s linear;
     transform: translate(-50%, 50%) scale(0.3);
     border-radius: 10px;
-    transition: opacity 0.2s linear, transform 0.2s linear, bottom 0.2s linear;
-    max-height: 100vh;
     overflow: auto;
+    max-height: 100vh;
+}
+
+.modal__content {
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #141825;
+    padding: 40px 0;
 }
 
 .closeButton {
@@ -64,6 +68,7 @@ body {
 .closeButton:after {
     content: '';
     position: absolute;
+    right: 0;
     width: 20px;
     height: 1.3px;
     transform: rotate(45deg);
@@ -74,6 +79,7 @@ body {
     content: '';
     position: absolute;
     width: 20px;
+    right: 0;
     height: 1.3px;
     transform: rotate(135deg);
     background-color: #fff;
