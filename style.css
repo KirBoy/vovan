@@ -47,7 +47,7 @@ body {
     transform: translate(-50%, 50%) scale(0.3);
     border-radius: 10px;
     overflow: auto;
-    max-height: 100vh;
+    max-height: 90vh;
 }
 
 .modal__content {
@@ -60,7 +60,7 @@ body {
 .closeButton {
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 30px;
     padding: 10px;
     cursor: pointer;
 }
@@ -436,10 +436,6 @@ body {
 
     .content {
         padding-top: 25px;
-    }
-
-    .modal__content {
-        padding: 50px 0;
     }
 
     .features__inner {
