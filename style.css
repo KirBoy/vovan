@@ -438,6 +438,10 @@ body {
         padding-top: 25px;
     }
 
+    .modal__content {
+        padding: 50px 0;
+    }
+
     .features__inner {
         padding-left: 16px;
     }
