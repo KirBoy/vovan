@@ -23,6 +23,11 @@ body {
     color: #FFF;
 }
 
+.registration {
+    text-decoration: none;
+    text-align: center;
+}
+
 .modal {
     position: fixed;
     top: 0;
