@@ -469,7 +469,7 @@ body {
     font-size: 14px;
 }
 
-.footer__text span {
+.footer__text {
     cursor: pointer;
 }
 
@@ -554,10 +554,11 @@ body {
     .logo {
         display: none;
     }
-
     .logo1 {
+        width: 125px;
         display: block;
     }
+
 
     .promoLink {
         display: none;
