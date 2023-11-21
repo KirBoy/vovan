@@ -204,7 +204,7 @@ body {
     padding: 13px 20px;
     width: 80px;
     display: none;
-
+    background-size: cover;
     background-image: url("./assets/bg123.png"), linear-gradient(199deg, #216FE8 13.03%, #0A3270 86.97%);
 }
 
