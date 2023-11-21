@@ -14,7 +14,7 @@
 
     src: local("UniSans"),
     url("assets/fonts/UniSans.woff2") format("woff2");
-    url("assets/fonts/UniSans.woff") format("woff");
+url("assets/fonts/UniSans.woff") format("woff");
 }
 
 body {
@@ -195,6 +195,7 @@ body {
     font-weight: 700;
     line-height: normal;
     background-image: url("./assets/promoBg.png"), linear-gradient(199deg, #216FE8 13.03%, #0A3270 86.97%);
+    background-size: cover;
 }
 
 .promoLink1 {
@@ -554,6 +555,7 @@ body {
     .logo {
         display: none;
     }
+
     .logo1 {
         width: 125px;
         display: block;
